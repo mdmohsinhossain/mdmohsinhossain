@@ -1,16 +1,16 @@
-## Hi there 👋
+<p align="center">
+  <img src="./assets/profile-banner.svg" alt="Profile banner for Md Mohsin Hossain" width="100%" />
+</p>
 
-<!--
-**mdmohsinhossain/mdmohsinhossain** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hello there 👋
 
-Here are some ideas to get you started:
+I work on climate adaptation, migration, public policy, sustainable livelihoods, and digital literacy using mixed methods.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Research: climate shocks, internal migration, water security, and urban resilience
+- Methods: impact evaluation, quasi-experimental analysis, survey research, and thematic analysis
+- Tools: Stata, SurveyCTO, NVivo, LaTeX, GitHub, Markdown, and HTML/CSS
+- Building: research websites, public-interest tools, and digital literacy projects
+
+Projects: [CyberWise BD](https://cyberwisebd.netlify.app/), [halafnama-ecs-bulk-downloader](https://github.com/mdmohsinhossain/halafnama-ecs-bulk-downloader), and [eap-iiif-book-downloader](https://github.com/mdmohsinhossain/eap-iiif-book-downloader).
+
+Links: [Website](https://mdmohsinhossain.github.io/) | [Research](https://mdmohsinhossain.github.io/research/) | [Blog](https://mdmohsinhossain.github.io/blog/) | [CV](https://mdmohsinhossain.github.io/assets/cv/CV_Md_Mohsin_Hossain.pdf) | [LinkedIn](https://www.linkedin.com/in/md-mohsin-hossain)

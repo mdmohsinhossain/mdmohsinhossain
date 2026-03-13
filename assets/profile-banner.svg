@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" role="img" aria-labelledby="title desc">
+  <title id="title">Md Mohsin Hossain profile banner</title>
+  <desc id="desc">A compact professional banner for Md Mohsin Hossain.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <style>
+      .name { fill: #f8fafc; font: 700 34px Arial, Helvetica, sans-serif; }
+      .role { fill: #cbd5e1; font: 500 16px Arial, Helvetica, sans-serif; }
+      .meta { fill: #94a3b8; font: 500 13px Arial, Helvetica, sans-serif; letter-spacing: 1.2px; }
+      .tag-text { fill: #dff8f3; font: 600 13px Arial, Helvetica, sans-serif; }
+      .tag-box { fill: rgba(15, 118, 110, 0.28); stroke: rgba(45, 212, 191, 0.35); stroke-width: 1; }
+      .soft { fill: rgba(20, 184, 166, 0.08); }
+      .line { stroke: rgba(148, 163, 184, 0.22); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="960" height="180" rx="18" fill="url(#bg)" />
+  <rect x="1" y="1" width="958" height="178" rx="17" fill="none" stroke="rgba(148, 163, 184, 0.18)" stroke-width="1" />
+
+  <rect x="36" y="28" width="120" height="6" rx="3" fill="url(#accent)" />
+  <circle cx="842" cy="38" r="86" class="soft" />
+  <circle cx="902" cy="132" r="52" class="soft" />
+  <path d="M734 42 H910" class="line" />
+  <path d="M786 138 H924" class="line" />
+
+  <text x="40" y="66" class="meta">RESEARCH | POLICY | DATA</text>
+  <text x="40" y="104" class="name">Md Mohsin Hossain</text>
+  <text x="40" y="131" class="role">Senior Research Associate, BIGD, BRAC University</text>
+
+  <rect x="40" y="144" width="110" height="24" rx="12" class="tag-box" />
+  <text x="60" y="160" class="tag-text">Climate</text>
+
+  <rect x="160" y="144" width="118" height="24" rx="12" class="tag-box" />
+  <text x="180" y="160" class="tag-text">Migration</text>
+
+  <rect x="288" y="144" width="88" height="24" rx="12" class="tag-box" />
+  <text x="308" y="160" class="tag-text">Policy</text>
+
+  <rect x="386" y="144" width="124" height="24" rx="12" class="tag-box" />
+  <text x="406" y="160" class="tag-text">Mixed Methods</text>
+</svg>
