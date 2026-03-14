@@ -1,48 +1,176 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" role="img" aria-labelledby="title desc">
   <title id="title">Md Mohsin Hossain profile banner</title>
-  <desc id="desc">A compact professional banner for Md Mohsin Hossain.</desc>
+  <desc id="desc">Hacker-style terminal banner for Md Mohsin Hossain.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1220" />
-      <stop offset="100%" stop-color="#111827" />
+      <stop offset="0%" stop-color="#050a05"/>
+      <stop offset="100%" stop-color="#080e08"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0f766e" />
-      <stop offset="100%" stop-color="#14b8a6" />
+    <radialGradient id="blob" cx="88%" cy="45%" r="32%">
+      <stop offset="0%" stop-color="#003300" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#003300" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rain-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080e08" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#080e08" stop-opacity="0"/>
     </linearGradient>
-    <style>
-      .name { fill: #f8fafc; font: 700 34px Arial, Helvetica, sans-serif; }
-      .role { fill: #cbd5e1; font: 500 16px Arial, Helvetica, sans-serif; }
-      .meta { fill: #94a3b8; font: 500 13px Arial, Helvetica, sans-serif; letter-spacing: 1.2px; }
-      .tag-text { fill: #dff8f3; font: 600 13px Arial, Helvetica, sans-serif; }
-      .tag-box { fill: rgba(15, 118, 110, 0.28); stroke: rgba(45, 212, 191, 0.35); stroke-width: 1; }
-      .soft { fill: rgba(20, 184, 166, 0.08); }
-      .line { stroke: rgba(148, 163, 184, 0.22); stroke-width: 1; }
-    </style>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="rgba(0,255,65,0.04)" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="scan" x="0" y="0" width="960" height="4" patternUnits="userSpaceOnUse">
+      <rect width="960" height="1" fill="rgba(0,0,0,0.1)"/>
+    </pattern>
   </defs>
 
-  <rect width="960" height="180" rx="18" fill="url(#bg)" />
-  <rect x="1" y="1" width="958" height="178" rx="17" fill="none" stroke="rgba(148, 163, 184, 0.18)" stroke-width="1" />
+  <!-- Background layers -->
+  <rect width="960" height="180" rx="10" fill="url(#bg)"/>
+  <rect width="960" height="180" rx="10" fill="url(#grid)"/>
+  <rect width="960" height="180" rx="10" fill="url(#blob)"/>
 
-  <rect x="36" y="28" width="120" height="6" rx="3" fill="url(#accent)" />
-  <circle cx="842" cy="38" r="86" class="soft" />
-  <circle cx="902" cy="132" r="52" class="soft" />
-  <path d="M734 42 H910" class="line" />
-  <path d="M786 138 H924" class="line" />
+  <!-- Borders -->
+  <rect x="0.5" y="0.5" width="959" height="179" rx="9.5" fill="none" stroke="rgba(0,255,65,0.28)" stroke-width="1"/>
+  <rect x="3" y="3" width="954" height="174" rx="8" fill="none" stroke="rgba(0,255,65,0.06)" stroke-width="1"/>
 
-  <text x="40" y="66" class="meta">RESEARCH | POLICY | DATA</text>
-  <text x="40" y="104" class="name">Md Mohsin Hossain</text>
-  <text x="40" y="131" class="role">Senior Research Associate, BIGD, BRAC University</text>
+  <!-- Corner HUD brackets -->
+  <path d="M38 12 L12 12 L12 38" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.55"/>
+  <path d="M922 12 L948 12 L948 38" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.55"/>
+  <path d="M38 168 L12 168 L12 142" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.55"/>
+  <path d="M922 168 L948 168 L948 142" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="12"  cy="12"  r="2" fill="#00ff41" opacity="0.5"/>
+  <circle cx="948" cy="12"  r="2" fill="#00ff41" opacity="0.5"/>
+  <circle cx="12"  cy="168" r="2" fill="#00ff41" opacity="0.5"/>
+  <circle cx="948" cy="168" r="2" fill="#00ff41" opacity="0.5"/>
 
-  <rect x="40" y="144" width="110" height="24" rx="12" class="tag-box" />
-  <text x="60" y="160" class="tag-text">Climate</text>
+  <!-- Matrix rain (x=706..940) -->
+  <text x="706" y="22" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="706" y="34" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">0</text>
+  <text x="706" y="46" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">ア</text>
+  <text x="706" y="58" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">1</text>
+  <text x="706" y="70" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.15">0</text>
+  <text x="706" y="82" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.06">1</text>
+  <text x="722" y="28" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">ウ</text>
+  <text x="722" y="40" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.75">0</text>
+  <text x="722" y="52" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">1</text>
+  <text x="722" y="64" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.25">ソ</text>
+  <text x="722" y="76" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.1">0</text>
+  <text x="738" y="17" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.4">0</text>
+  <text x="738" y="29" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">1</text>
+  <text x="738" y="41" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.75">テ</text>
+  <text x="738" y="53" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">0</text>
+  <text x="738" y="65" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.25">1</text>
+  <text x="738" y="77" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.1">0</text>
+  <text x="754" y="24" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">ネ</text>
+  <text x="754" y="36" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.65">1</text>
+  <text x="754" y="48" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.8">0</text>
+  <text x="754" y="60" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="754" y="72" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.25">ム</text>
+  <text x="754" y="84" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.08">0</text>
+  <text x="770" y="20" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.35">1</text>
+  <text x="770" y="32" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">イ</text>
+  <text x="770" y="44" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">0</text>
+  <text x="770" y="56" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.85">1</text>
+  <text x="770" y="68" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">カ</text>
+  <text x="770" y="80" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">0</text>
+  <text x="786" y="26" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">エ</text>
+  <text x="786" y="38" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.45">0</text>
+  <text x="786" y="50" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.65">1</text>
+  <text x="786" y="62" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.8">0</text>
+  <text x="786" y="74" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">ア</text>
+  <text x="786" y="86" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.2">1</text>
+  <text x="802" y="22" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">0</text>
+  <text x="802" y="34" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">ソ</text>
+  <text x="802" y="46" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="802" y="58" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.35">0</text>
+  <text x="802" y="70" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.12">テ</text>
+  <text x="818" y="18" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.45">1</text>
+  <text x="818" y="30" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">0</text>
+  <text x="818" y="42" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.75">ウ</text>
+  <text x="818" y="54" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="818" y="66" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">0</text>
+  <text x="818" y="78" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.12">1</text>
+  <text x="834" y="25" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">ム</text>
+  <text x="834" y="37" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.4">1</text>
+  <text x="834" y="49" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">0</text>
+  <text x="834" y="61" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.75">ネ</text>
+  <text x="834" y="73" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.45">1</text>
+  <text x="834" y="85" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.18">0</text>
+  <text x="850" y="21" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.4">0</text>
+  <text x="850" y="33" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="850" y="45" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">イ</text>
+  <text x="850" y="57" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.85">0</text>
+  <text x="850" y="69" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">1</text>
+  <text x="850" y="81" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">カ</text>
+  <text x="866" y="27" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">エ</text>
+  <text x="866" y="39" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.45">0</text>
+  <text x="866" y="51" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.65">1</text>
+  <text x="866" y="63" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">ア</text>
+  <text x="866" y="75" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.2">0</text>
+  <text x="882" y="23" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">1</text>
+  <text x="882" y="35" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.65">ソ</text>
+  <text x="882" y="47" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.8">0</text>
+  <text x="882" y="59" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">1</text>
+  <text x="882" y="71" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">テ</text>
+  <text x="898" y="19" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.4">0</text>
+  <text x="898" y="31" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">ム</text>
+  <text x="898" y="43" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">1</text>
+  <text x="898" y="55" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">0</text>
+  <text x="898" y="67" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.25">ウ</text>
+  <text x="914" y="24" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">1</text>
+  <text x="914" y="36" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.7">0</text>
+  <text x="914" y="48" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.5">ネ</text>
+  <text x="914" y="60" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.3">1</text>
+  <text x="930" y="20" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.45">イ</text>
+  <text x="930" y="32" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.6">1</text>
+  <text x="930" y="44" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.75">0</text>
+  <text x="930" y="56" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.55">カ</text>
+  <text x="930" y="68" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" opacity="0.25">1</text>
 
-  <rect x="160" y="144" width="118" height="24" rx="12" class="tag-box" />
-  <text x="180" y="160" class="tag-text">Migration</text>
+  <!-- Fade mask on left edge of rain -->
+  <rect x="700" y="0" width="80" height="180" fill="url(#rain-fade)"/>
 
-  <rect x="288" y="144" width="88" height="24" rx="12" class="tag-box" />
-  <text x="308" y="160" class="tag-text">Policy</text>
+  <!-- Dashed separator -->
+  <line x1="700" y1="20" x2="700" y2="160" stroke="rgba(0,255,65,0.15)" stroke-width="1" stroke-dasharray="3,5"/>
 
-  <rect x="386" y="144" width="124" height="24" rx="12" class="tag-box" />
-  <text x="406" y="160" class="tag-text">Mixed Methods</text>
+  <!-- Left vertical accent -->
+  <line x1="34" y1="22" x2="34" y2="158" stroke="rgba(0,255,65,0.35)" stroke-width="1"/>
+
+  <!-- Meta comment -->
+  <line x1="40" y1="38" x2="692" y2="38" stroke="rgba(0,255,65,0.1)" stroke-width="1"/>
+  <text x="40" y="32" font-family="'Courier New',monospace" font-size="10" fill="#007a1f" letter-spacing="2">// RESEARCHER · POLICY · DATA · DIGITAL_LITERACY</text>
+
+  <!-- Terminal name line -->
+  <text x="40" y="82" filter="url(#glow)"><tspan font-family="'Courier New',monospace" font-size="26" font-weight="700" fill="#00cc33">root@bigd:~$</tspan><tspan font-family="'Courier New',monospace" font-size="26" font-weight="700" fill="#00ff41"> ./Md_Mohsin_Hossain</tspan></text>
+
+  <!-- Blinking cursor -->
+  <rect x="540" y="62" width="14" height="22" fill="#00ff41">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Role line -->
+  <text x="40" y="108"><tspan font-family="'Courier New',monospace" font-size="13" fill="#005c18">&#x2192;</tspan><tspan font-family="'Courier New',monospace" font-size="13" fill="#39d353"> Senior Research Associate, BIGD &#x2014; BRAC University</tspan></text>
+
+  <!-- Tags -->
+  <rect x="40"  y="122" width="80"  height="22" rx="3" fill="rgba(0,255,65,0.07)" stroke="rgba(0,255,65,0.32)" stroke-width="0.8"/>
+  <text x="50"  y="137" font-family="'Courier New',monospace" font-size="11.5" fill="#00ff41">[Climate]</text>
+  <rect x="128" y="122" width="92"  height="22" rx="3" fill="rgba(0,255,65,0.07)" stroke="rgba(0,255,65,0.32)" stroke-width="0.8"/>
+  <text x="138" y="137" font-family="'Courier New',monospace" font-size="11.5" fill="#00ff41">[Migration]</text>
+  <rect x="228" y="122" width="72"  height="22" rx="3" fill="rgba(0,255,65,0.07)" stroke="rgba(0,255,65,0.32)" stroke-width="0.8"/>
+  <text x="238" y="137" font-family="'Courier New',monospace" font-size="11.5" fill="#00ff41">[Policy]</text>
+  <rect x="308" y="122" width="126" height="22" rx="3" fill="rgba(0,255,65,0.07)" stroke="rgba(0,255,65,0.32)" stroke-width="0.8"/>
+  <text x="318" y="137" font-family="'Courier New',monospace" font-size="11.5" fill="#00ff41">[Mixed Methods]</text>
+  <rect x="442" y="122" width="118" height="22" rx="3" fill="rgba(0,255,65,0.07)" stroke="rgba(0,255,65,0.32)" stroke-width="0.8"/>
+  <text x="452" y="137" font-family="'Courier New',monospace" font-size="11.5" fill="#00ff41">[Impact Eval.]</text>
+
+  <!-- Bottom divider + status bar -->
+  <line x1="40" y1="153" x2="692" y2="153" stroke="rgba(0,255,65,0.12)" stroke-width="1"/>
+  <text x="40"  y="165" font-family="'Courier New',monospace" font-size="9" fill="#005c18" letter-spacing="1">STATUS: ONLINE</text>
+  <text x="180" y="165" font-family="'Courier New',monospace" font-size="9" fill="#005c18" letter-spacing="1">LOC: DHAKA, BD</text>
+  <text x="318" y="165" font-family="'Courier New',monospace" font-size="9" fill="#005c18" letter-spacing="1">FOCUS: CLIMATE · MIGRATION · RESILIENCE</text>
+
+  <!-- Scanlines -->
+  <rect width="960" height="180" rx="10" fill="url(#scan)"/>
 </svg>
