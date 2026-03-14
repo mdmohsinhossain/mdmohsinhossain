@@ -2,7 +2,7 @@
   <img src="./assets/profile-banner.svg" alt="Terminal-style banner showing research themes and tool stack" width="100%" />
 </p>
 
-I work on climate adaptation, migration, public policy, sustainable livelihoods, and digital literacy using mixed methods.
+I work on climate adaptation, migration, public policy, and sustainable livelihoods using mixed methods.
 
 ## Focus
 
