@@ -8,7 +8,7 @@ I work on climate adaptation, migration, public policy, sustainable livelihoods,
 
 - Climate shocks, internal migration, water security, and urban resilience
 - Impact evaluation, quasi-experimental analysis, survey research, and thematic analysis
-- Research websites, public-interest tools, and digital literacy projects
+- Public-interest tools, and digital literacy projects
 
 ## Selected Projects
 
