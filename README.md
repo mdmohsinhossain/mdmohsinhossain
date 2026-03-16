@@ -2,13 +2,7 @@
   <img src="./assets/profile-banner.svg" alt="Terminal-style banner showing research themes and tool stack" width="100%" />
 </p>
 
-I work on climate adaptation, migration, public policy, and sustainable livelihoods using mixed methods.
-
-## Focus
-
-- Climate shocks, internal migration, water security, and urban resilience
-- Impact evaluation, quasi-experimental analysis, survey research, and thematic analysis
-- Public-interest tools, and digital literacy projects
+I work on climate adaptation, migration,water security, public policy, and sustainable livelihoods using mixed methods. Also interested in developing or contributing to public-interest tools, and digital literacy projects.
 
 ## Selected Projects
 
