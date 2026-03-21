@@ -259,7 +259,7 @@
   <text x="420" y="170" class="mono faint tiny">OUTPUT: RESEARCH · TOOLS · WRITING</text>
 
   <!-- watermark -->
-  <text x="920" y="174" class="mono" font-size="6" fill="#00ff41" opacity="0.06" text-anchor="end">mdmohsinhossain</text>
+  <text x="920" y="174" class="mono" font-size="6" fill="#00ff41" opacity="0.11" text-anchor="end">mdmohsinhossain.github.io</text>
 
   <!-- scanlines -->
   <rect width="960" height="180" rx="12" fill="url(#scanlines)" class="scan-overlay"/>
