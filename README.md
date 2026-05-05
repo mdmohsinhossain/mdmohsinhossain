@@ -6,4 +6,4 @@ I work on climate adaptation, migration,water security, public policy, and susta
 
 ## Links
 
-[Website](https://mdmohsinhossain.github.io/) · [Research](https://mdmohsinhossain.github.io/research/) · [Blog](https://mdmohsinhossain.github.io/blog/) · [CV](https://mdmohsinhossain.github.io/assets/cv/CV_Md_Mohsin_Hossain.pdf) · [LinkedIn](https://www.linkedin.com/in/md-mohsin-hossain)
+[Website](https://mdmohsinhossain.github.io/) · [Research](https://mdmohsinhossain.github.io/research/) · [Blog](https://mdmohsinhossain.github.io/blog/) · [CV](https://mdmohsinhossain.github.io/cv/CV_Md_Mohsin_Hossain.pdf) · [LinkedIn](https://www.linkedin.com/in/md-mohsin-hossain)
